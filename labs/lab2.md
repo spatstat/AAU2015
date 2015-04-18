@@ -8,18 +8,18 @@ This session covers exploratory tools for investigating intensity.
     1.  Plot the `japanesepines` data.
 
     2.  Use the command `quadratcount` to divide the study
-        region of the Japanese Pines data into a $3 \times 3$ array of
+        region of the Japanese Pines data into a 3x3 array of
         equal quadrats, and count the number of trees in each quadrat.
 
     3.  Most plotting commands will accept the argument
         `add=TRUE` and interpret it to mean that the plot
         should be drawn over the existing display, without clearing the
         screen beforehand. Use this to plot the Japanese Pines data, and
-        superimposed on this, the $3\times 3$ array of quadrats, with
+        superimposed on this, the 3x3 array of quadrats, with
         the quadrat counts also displayed.
 
     4.  Use the command `quadrat.test` to perform the
-        $\chi^2$ test of CSR on the Japanese Pines data.
+        χ-square test of CSR on the Japanese Pines data.
 
     5.  Plot the Japanese Pines data, and superimposed on this, the
         3x3 array of quadrats and the observed, expected and

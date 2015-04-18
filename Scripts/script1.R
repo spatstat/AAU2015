@@ -40,7 +40,16 @@ Phones <- ppp(xy$x, xy$y, c(0, 20), c(0, 10))
 Phones
 plot(Phones)
 
-#' basic analysis
+#' A point pattern has a 'window'
+Window(bei)
+W <- Window(bei)
+class(W)
+plot(chorley)
+Window(chorley)
+#' owin objects can be created & manipulated
+square(2)
+
+#' basic analysis of a point pattern
 summary(bei)
 #' dispatched to summary.ppp
 intensity(bei)

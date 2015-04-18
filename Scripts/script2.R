@@ -7,21 +7,22 @@
 #'         Copyright (c) Adrian Baddeley and Ege Rubak 2015
 #' 
 library(spatstat)
-plot(japanesepines)
+plot(swedishpines)
 plot(bei)
-#' discuss 'inhomogeneous' intensity
-a <- quadratcount(japanesepines, 3, 3)
+swp <- swedishpines
+#' Possible spatial variation in forest density
+a <- quadratcount(swp, 3, 3)
 a
 plot(a)
 #' object of a class that can be both printed and plotted.
 #'
-plot(japanesepines)
+plot(swp)
 plot(a, add=TRUE, col="red")
 #'
 #'
 #' For homogeneous pattern, numbers should be **approximately* equal
 #' Apply chi^2 test
-quadrat.test(japanesepines, 3, 3)
+quadrat.test(swp, 3, 3)
 #' [Interpret]
 
 b4 <- quadrat.test(bei, 4, 2)

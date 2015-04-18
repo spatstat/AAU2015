@@ -11,22 +11,11 @@ library(spatstat)
 chorley.extra$plotit()
 #' [Discuss problem]
 
-X <- murchison$gold
-L <- murchison$faults
-plot(X, main="Murchison gold data", chars=16, cex=0.6, cols="blue")
-plot(L, add=TRUE, col="red")
+murX <- murchison$gold
+murL <- murchison$faults
+plot(murX, main="Murchison gold data", chars=16, cex=0.6, cols="blue")
+plot(murL, add=TRUE, col="red")
 #' [Discuss problem]
-
-D <- distmap(L)
-plot(D)
-plot(L, add=TRUE, col="white")
-#' distance to nearest fault
-
-rh <- rhohat(X, D)
-plot(rh)
-#' [Explain theory]
-rh
-plot(predict(rh))
 
 copP <- rotate(copper$SouthPoints, pi/2)
 copL <- rotate(copper$SouthLines, pi/2)
@@ -34,7 +23,30 @@ plot(copP, main="Queensland copper data")
 plot(copL, add=TRUE)
 
 copD <- distmap(copL)
-plot(rhohat(copP, copD))
+plot(copD)
+plot(copL, add=TRUE, col="white")
+#' distance to nearest fault
+
+#' [divide range of covariate into bands]
+facD <- cut(copD, breaks=5)
+tesD <- tess(image=facD)
+copQ <- quadratcount(copP, tess=tesD)
+copQ
+intensity(copQ)
+
+#' 
+rh <- rhohat(copP, copD)
+plot(rh)
+#' [Explain theory]
+rh
+plot(predict(rh))
+
+#' gold data
+murD <- distmap(murL)
+plot(murD)
+plot(murL, add=TRUE, col="white")
+
+plot(rhohat(murX, murD))
 
 berman.test(copP, copD)
 bt <- .Last.value
@@ -46,6 +58,6 @@ plot(bt2)
 #' [Explain theory]
 
 plot(roc(copP, copD))
-plot(roc(X, D, high=FALSE))
+plot(roc(murX, murD, high=FALSE))
 #' ROC plot [development version of spatstat]
 

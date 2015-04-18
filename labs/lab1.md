@@ -12,8 +12,6 @@ If you have not already done so, you’ll need to
 library(spatstat)
 ```
 
--------------------------------------------------------------------
-
 1.  We will study a dataset that records the locations of Ponderosa Pine
     trees (*Pinus ponderosa*) in a study region in the
     Klamath National Forest in northern California. The data are
@@ -58,15 +56,6 @@ library(spatstat)
         `chars="+"`, and the difference between `chars=4` and
         `chars="X"`).
 
-3.  Create and plot a window object (object of
-    class `"owin"`) representing each of the following:
-
-    1.  the rectangle [0,10]x[0, 5];
-
-    2.  the disc of radius 4 centred at (5,2);
-
-    3.  the intersection of these two windows.
-
 3.  The following vectors record the locations of 10 scintillation events
     observed under a microscope. Coordinates are given in microns, and
     the study region was $30 \times 30$ microns, with the origin at the
@@ -76,17 +65,28 @@ x <- c(13, 15, 27, 17, 8, 8, 1, 14, 19, 23)
 y <- c(3, 15, 7, 11, 10, 17, 29, 22, 19, 29)
 ```
     Create a point pattern `X` from the data,
-    and plot the point pattern.
+    and plot the point pattern (use `owin` or `square` to define the study region).
 
-4.  The dataset `longleaf` contains the Longleaf Pines
-    dataset giving the locations of trees and their diameters at breast
-    height.
+4.  The file `anthills.txt` is available in the Data directory:
 
-    1.  Read the help file for the data;
+    [https://github.com/spatstat/AAU2015/Data/anthills.txt](https://github.com/spatstat/AAU2015/Data/anthills.txt)
 
-    2.  access the dataset and plot it;
+    It records the locations of anthills recorded in a
+    $1200 \times 1500$ metre study region in northern Australia.
+    Coordinates are given in metres, along with a letter code recording
+    the ecological ‘status’ of each anthill (in this exercise we will ignore this letter code).
 
-    3.  re-plot the data so that the tree diameters are displayed at a
-        physical scale that is 10 times the physical scale of the
-        location coordinates.
+    1.  read the data into `R` as a data frame, using the
+        `R` function `read.table`.
 
+        > Since the input file has a header line, you will need to use
+        > the argument `header=TRUE` when you call
+        > `read.table`.
+
+    2.  check the data for any peculiarities.
+
+    3.  create a point pattern `hills` containing these data.
+        Ensure that the marks are a factor, and that the unit of length
+        is given its correct name.
+
+    4.  plot the data.

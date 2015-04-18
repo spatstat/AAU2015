@@ -1,7 +1,6 @@
-## Lab1
+## Lab 1
 
-This session gives a general orientation to `R` and
-`spatstat`.
+This session is about reading in, displaying and summarising point patterns.
 
 If you have not already done so, you’ll need to
 
@@ -86,7 +85,6 @@ library(spatstat)
     2.  check the data for any peculiarities.
 
     3.  create a point pattern `hills` containing these data.
-        Ensure that the marks are a factor, and that the unit of length
-        is given its correct name.
+        Ensure that the unit of length is given its correct name.
 
     4.  plot the data.

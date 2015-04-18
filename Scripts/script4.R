@@ -14,11 +14,11 @@ plot(rpoispp(30, nsim=20), main.panel="", mar.panel=1, pch=16)
 #' [Poisson properties]
 
 #' [Homogeneous Poisson process is completely specified by its intensity]
-intensity(japanesepines)
+intensity(swedishpines)
 #' Fit model to data
-ppm(japanesepines)
+ppm(swedishpines)
 #' No other arguments - assume homogeneous Poisson.
-m <- ppm(japanesepines)
+m <- ppm(swedishpines)
 class(m)
 coef(m)
 simulate(m)
@@ -69,3 +69,9 @@ copD <- distmap(copL)
 cfD <- ppm(copP ~ copD)
 cf0 <- ppm(copP ~ 1)
 anova(cf0, cfD, test="LR")
+
+#' model selection
+cfD3 <- ppm(copP ~ polynom(copD, 3))
+cfD3
+step(cfD3)
+

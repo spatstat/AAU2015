@@ -1,0 +1,36 @@
+---
+title: 'Lab 8: Spacing and distances'
+---
+
+```{r, include = FALSE}
+# This option turns evaluation of R code off in this document. Remove it
+# if you use it as a template for solving the lab exercise.
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+This session is concerned with summary statistics for interpoint
+spacing and distances.
+
+```{r include=FALSE}
+library(spatstat)
+```
+
+### Exercise 1
+
+For the `swedishpines` data:
+
+1.  Calculate the estimate of the nearest neighbour distance
+    distribution function $G$ using `Gest`.
+
+2.  Plot $\hat G(r)$ against $r$
+
+3.  Plot $\hat G(r)$ against the theoretical (Poisson) value
+    $G_{\mbox{pois}}(r) = 1 - \exp(-\lambda \pi r^2)$.
+
+4.  Define Fisher’s variance-stabilising transformation for c.d.f.’s
+    by
+    ```{r}
+    fish <- function(x) asin(sqrt(x))
+    ```
+    Plot the $G$ function using the formula `fish(.) ~ fish(theo)`
+    and interpret it.

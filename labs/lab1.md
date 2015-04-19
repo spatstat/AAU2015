@@ -71,7 +71,7 @@ library(spatstat)
     [https://github.com/spatstat/AAU2015/Data/anthills.txt](https://github.com/spatstat/AAU2015/Data/anthills.txt)
 
     It records the locations of anthills recorded in a
-    $1200 \times 1500$ metre study region in northern Australia.
+    1200x1500 metre study region in northern Australia.
     Coordinates are given in metres, along with a letter code recording
     the ecological ‘status’ of each anthill (in this exercise we will ignore this letter code).
 

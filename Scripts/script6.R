@@ -42,6 +42,23 @@ plot(Kest(inde))
 plot(Kest(clus))
 par23x <- par(par0)
 
+K <- Kest(regu)
+plot(K, . ~ r)
+plot(K, iso ~ r)
+plot(K, . - theo ~ r)
+plot(K, sqrt(./pi) ~ r)
+
+plot(Lest(regu))
+
+par(par23x)
+plot(regu)
+plot(inde)
+plot(clus)
+plot(Lest(regu))
+plot(Lest(inde))
+plot(Lest(clus))
+par(par0)
+
 plot(pcf(regu))
 plot(pcf(clus))
 plot(pcf(clus, divisor="d"))
@@ -54,6 +71,20 @@ plot(pcf(regu))
 plot(pcf(inde))
 plot(pcf(clus))
 par(par0)
+
+#' inhomogeneous?
+par(mar=0.5+c(4,4,2,1))
+X <- rpoispp(function(x,y){ 1000 * exp(- 10 * ((x-0.5)^2+(y-0.5)^2)) })
+par(mfrow=c(1,2))
+plot(X)
+plot(Kest(X))
+#' [Kest is 'fooled']
+par(mfrow=c(1,3))
+plot(X)
+plot(density(X, sigma=bw.scott))
+plot(Kinhom(X, sigma=bw.scott))
+#' sensitive to estimation of lambda
+
 
 
 

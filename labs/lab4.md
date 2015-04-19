@@ -79,8 +79,6 @@ This session is concerned with Poisson point process models.
     6.  Compute and plot the standard error of the intensity estimate
     	(see `help(predict.ppm)`).
 
-### Supplementary exercises
-
 6.  Fit Poisson point process models to the Japanese Pines data, with
     the following trend formulas. Read off an expression for the fitted
     intensity function in each case.

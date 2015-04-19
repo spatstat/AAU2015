@@ -8,6 +8,7 @@
 #' 
 library(spatstat)
 
+set.seed(42)
 inde <- rpoispp(100)
 regu <- rSSI(0.09, 70)
 clus <- rMatClust(30, 0.05, 4)

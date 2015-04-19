@@ -1,11 +1,12 @@
+---
+output: pdf_document
+---
 ## Lab 1
 
 This session is about reading in, displaying and summarising point patterns.
 
 If you have not already done so, you’ll need to
-
 -   Start `R`.
-
 -   Load the `spatstat` package by typing
 ```r
 library(spatstat)
@@ -17,18 +18,15 @@ library(spatstat)
     included with `spatstat` as the dataset
     `ponderosa`.
 
-    1.  Type `data(ponderosa)` to access the data;
+    1.  assign the data to a shorter name, like `X` or `P`;
 
-    2.  assign the data to a shorter name, like `X` or
-        `P`;
+    2.  plot the data;
 
-    3.  plot the data;
+    3.  find out how many trees are recorded;
 
-    4.  find out how many trees are recorded;
+    4.  find the dimensions of the study region;
 
-    5.  find the dimensions of the study region;
-
-    6.  obtain an estimate of the average intensity of trees (number of
+    5.  obtain an estimate of the average intensity of trees (number of
         trees per unit area).
 
 2.  The Ponderosa data, continued:
@@ -44,13 +42,13 @@ library(spatstat)
 
     3.  from your reading of the help file, predict what will happen if
         we type
-	 ```r
- 	 plot(ponderosa, chars="X", cols="green")
-	 ```
+        ```r
+        plot(ponderosa, chars="X", cols="green")
+        ```
         then check that your guess was correct;
 
     4.  try different values of the argument `chars`, for
-        example, one of the integers $0$ to $25$, or a letter of the
+        example, one of the integers 0 to 25, or a letter of the
         alphabet. (Note the difference between `chars=3` and
         `chars="+"`, and the difference between `chars=4` and
         `chars="X"`).

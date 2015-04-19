@@ -58,6 +58,7 @@ This session is concerned with Poisson point process models.
 	```
 
     2.  Now type `step(fit2)` and interpret the results.
+    
 
 
 5.  The `bei` dataset gives the locations of trees in a survey area

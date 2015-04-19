@@ -55,8 +55,8 @@ This session is concerned with Poisson point process models.
 
     2.  Now type `step(fit2)` and interpret the results.
 
-5.  The `bei` dataset gives the locations of trees in a survey area with additional
-    covariate information in a list `bei.extra`.
+5.  The `bei` dataset gives the locations of trees in a survey area
+    with additional covariate information in a list `bei.extra`.
 
     1.  Assign both terrain elevation and slope (gradient) sensible names
     	```r
@@ -64,8 +64,9 @@ This session is concerned with Poisson point process models.
         grad <- bei.extra$grad
 	```
 
-    2.  Fit a Poisson point process model to the data which assumes that the intensity is a loglinear function of
-        terrain slope and elevation
+    2.  Fit a Poisson point process model to the data which assumes
+        that the intensity is a loglinear function of terrain slope
+        and elevation
 
     3.  Read off the fitted coefficients and write down the fitted
         intensity function.
@@ -75,7 +76,8 @@ This session is concerned with Poisson point process models.
     5.  extract the estimated variance-covariance matrix of the
         coefficient estimates, using `vcov`.
 
-    6.  Compute and plot the standard error of the intensity estimate (see `help(predict.ppm)`).
+    6.  Compute and plot the standard error of the intensity estimate
+    	(see `help(predict.ppm)`).
 
 ### Supplementary exercises
 

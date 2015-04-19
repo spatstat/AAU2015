@@ -28,9 +28,9 @@ clarkevans(clus, correction="D")
 ce <- sapply(pats, clarkevans, correction="D")
 mean(ce[20] >= ce)
 
-plot(envelope(clus, Kest, nsim=19))
+plot(envelope(clus, Kest, nsim=39))
 
-plot(envelope(clus, Lest, nsim=19))
+plot(envelope(clus, Lest, nsim=39))
 
 plot(envelope(clus, Lest, nsim=19, global=TRUE))
 

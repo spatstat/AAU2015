@@ -49,7 +49,9 @@ This session covers exploratory tools for investigating intensity.
         and find the documentation for the arguments `theta`,
         `phi` and `shade`.
 
-3.  1.  Compute a kernel estimate of the intensity for the Japanese
+3.  More Japanese Pines:
+
+    1.  Compute a kernel estimate of the intensity for the Japanese
         Pines data using a Gaussian kernel with standard deviation
         σ=0.15.
 

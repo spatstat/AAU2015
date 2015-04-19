@@ -75,12 +75,10 @@ library(spatstat)
     Coordinates are given in metres, along with a letter code recording
     the ecological ‘status’ of each anthill (in this exercise we will ignore this letter code).
 
-    1.  read the data into `R` as a data frame, using the
-        `R` function `read.table`.
-
-        > Since the input file has a header line, you will need to use
-        > the argument `header=TRUE` when you call
-        > `read.table`.
+    1.  read the data into `R` as a data frame, using the `R` function
+        `read.table`. (Since the input file has a header line, you
+        will need to use the argument `header=TRUE` when you call
+        `read.table`.)
 
     2.  check the data for any peculiarities.
 

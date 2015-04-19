@@ -2,6 +2,7 @@
 
 This session covers exploratory tools for investigating intensity.
 
+
 1.  The `bei` dataset gives the locations of trees in a survey area with additional
     covariate information in a list `bei.extra`.
 
@@ -18,8 +19,9 @@ This session covers exploratory tools for investigating intensity.
     4.	Convert the image from above to a tesselation, count the number of points in
     	each region using `quadratcount`, and plot the quadrat counts.
 
-    5,  Estimate the intensity in each of the four regions.
-    
+    5.  Estimate the intensity in each of the four regions.
+
+
 2.  Assume that the intensity of trees is a function λ(u) = ρ(e(u))
     where e(u) is the terrain elevation at location u.
 
@@ -42,6 +44,7 @@ This session covers exploratory tools for investigating intensity.
     	l <- solist(pred, ker)
     	plot(l, equal.ribbon = TRUE, main = "", main.panel = c("rhohat prediction", "kernel smoothing"))
     	```
+
 
 3.  Continuing with the dataset `bei` conduct both Berman's Z1 and Z2 tests for
     dependence on `elev`, and plot the results.

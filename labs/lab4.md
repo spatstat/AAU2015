@@ -11,6 +11,7 @@ This session is concerned with Poisson point process models.
 
     2.  Try the same thing with intensity λ = 1.5.
 
+
 2.  Returning to the Japanese Pines data,
 
     1.  Fit the uniform Poisson point process model to the Japanese
@@ -19,6 +20,7 @@ This session is concerned with Poisson point process models.
 
     2.  Read off the fitted intensity. Check that this is the correct
         value of the maximum likelihood estimate of the intensity.
+
 
 3.  The `japanesepines` dataset is believed to exhibit
     spatial inhomogeneity.
@@ -42,18 +44,21 @@ This session is concerned with Poisson point process models.
         model, and plot them, using `plot(simulate(fit,
         nsim=10))` where `fit` is the fitted model.
 
+
 4.  The `update` command can be used to re-fit a point
     process model using a different model formula.
 
     1.  Type the following commands and interpret the results:
-
-                  fit0 <- ppm(japanesepines ~ 1)
-                  fit1 <- update(fit0, . ~ x)
-                  fit1
-                  fit2 <- update(fit1, . ~ . + y)
-                  fit2
+    	```r
+        fit0 <- ppm(japanesepines ~ 1)
+        fit1 <- update(fit0, . ~ x)
+        fit1
+        fit2 <- update(fit1, . ~ . + y)
+        fit2
+	```
 
     2.  Now type `step(fit2)` and interpret the results.
+
 
 5.  The `bei` dataset gives the locations of trees in a survey area
     with additional covariate information in a list `bei.extra`.
@@ -79,6 +84,7 @@ This session is concerned with Poisson point process models.
     6.  Compute and plot the standard error of the intensity estimate
     	(see `help(predict.ppm)`).
 
+
 6.  Fit Poisson point process models to the Japanese Pines data, with
     the following trend formulas. Read off an expression for the fitted
     intensity function in each case.
@@ -94,5 +100,3 @@ This session is concerned with Poisson point process models.
 
 7.  Make image plots of the fitted intensities for the inhomogeneous
     models above.
-
-

@@ -56,9 +56,9 @@ This session covers exploratory tools for investigating intensity.
         σ=0.15.
 
     2.  Find the maximum and minimum values of the intensity estimate
-        over the study region.
+        over the study region. (Hint: Use `summary` or `range`)
 
     3.  The kernel estimate of intensity is defined so that its integral
         over the entire study region is equal to the number of points in
         the data pattern, ignoring edge effects. Check whether this is
-        approximately true in this example.
+        approximately true in this example. (Hint: use `integral`)

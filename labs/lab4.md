@@ -85,14 +85,14 @@ This session is concerned with Poisson point process models.
     the following trend formulas. Read off an expression for the fitted
     intensity function in each case.
 
-|Trend formula|Fitted intensity function                        |
-|:-----------------|:-------------------------------------------|
-|`~1`              |                                            |
-|`~x`              |                                            |
-|`~sin(x)`         |                                            |
-|`~x+y`            |                                            |
-|`~polynom(x,y,2)` |                                            |
- `~factor(x < 0.4)`|                                            |
+    |Trend formula|Fitted intensity function                        |
+    |:-----------------|:-------------------------------------------|
+    |`~1`              |                                            |
+    |`~x`              |                                            |
+    |`~sin(x)`         |                                            |
+    |`~x+y`            |                                            |
+    |`~polynom(x,y,2)` |                                            |
+    |`~factor(x < 0.4)`|                                            |
 
 7.  Make image plots of the fitted intensities for the inhomogeneous
     models above.

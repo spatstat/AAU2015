@@ -40,18 +40,13 @@ in a large forest. We shall assume the pattern is stationary.
 
 ### Exercise 2
 
-1.  Generate a Morishita Plot for the Swedish Pines data using
-    ```{r}
-    miplot(swedishpines)
-    ```
-
-2.  Generate Fry Plots for the Swedish Pines data using the two commands
+1.  Generate Fry Plots for the Swedish Pines data using the two commands
     ```{r}
     fryplot(swedishpines)
     fryplot(swedishpines, width=50)
     ```
 
-3.  What can you interpret from these plots?
+2.  What can you interpret from these plots?
 
 
 ### Exercise 3
@@ -103,7 +98,7 @@ pattern is not spatially homogeneous, try the following experiment.
     evidence of clustering.
 
 
-### Exercise 4
+### Exercise 5
 
 The cell process (`rcell`) has the same theoretical $K$-function as
 the uniform Poisson process.

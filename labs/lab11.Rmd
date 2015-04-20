@@ -26,7 +26,7 @@ two types (“on” and “off” detectors) in a layer of the retina.
 
 2.  plot estimates of the bivariate pair correlation functions by
     ```{r}
-    plot(alltypes(amacrine, pcfcross, spar=2, method="b"))
+    plot(alltypes(amacrine, pcfcross))
     ```
 
 3.  What is the overall interpretation of these summary functions?

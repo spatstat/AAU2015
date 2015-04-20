@@ -8,7 +8,8 @@ title: 'Lab 1: Introduction'
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
-This session is about reading in, displaying and summarising point patterns.
+This session is about reading in, displaying and summarising point patterns.  
+The lecturer's R script is [available here](https://raw.githubusercontent.com/spatstat/AAU2015/master/Scripts/script01.R) (right click and save).
 
 If you have not already done so, you’ll need to start R and load the `spatstat`
 package by typing
@@ -75,8 +76,8 @@ and plot the point pattern (use `owin` or `square` to define the study region).
 ### Exercise 4
 
 The file `anthills.txt` is available in the Data directory on 
-[github](https://github.com/spatstat/AAU2015) and downloadable by 
-[this direct link](https://raw.githubusercontent.com/spatstat/AAU2015/labs/Data/anthills.txt) (right click and save).
+[GitHub](https://github.com/spatstat/AAU2015) and downloadable by 
+[this direct link](https://raw.githubusercontent.com/spatstat/AAU2015/master/Data/anthills.txt) (right click and save).
 
 It records the locations of anthills recorded in a
 1200x1500 metre study region in northern Australia.

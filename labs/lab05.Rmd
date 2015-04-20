@@ -9,7 +9,8 @@ knitr::opts_chunk$set(eval = FALSE)
 ```
 
 This session covers modelling of marked point patterns using marked
-point processes.
+point processes.  
+The lecturer's R script is [available here](https://raw.githubusercontent.com/spatstat/AAU2015/master/Scripts/script05.R) (right click and save).
 
 ```{r include=FALSE}
 library(spatstat)
@@ -43,7 +44,7 @@ height.
 
 The file `anthills.txt` is available in the Data directory on 
 [github](https://github.com/spatstat/AAU2015) and downloadable by 
-[this direct link](https://raw.githubusercontent.com/spatstat/AAU2015/labs/Data/anthills.txt) (right click and save).
+[this direct link](https://raw.githubusercontent.com/spatstat/AAU2015/master/Data/anthills.txt) (right click and save).
 
 It records the locations of anthills recorded in a
 1200x1500 metre study region in northern Australia.

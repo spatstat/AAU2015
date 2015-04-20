@@ -9,7 +9,8 @@ knitr::opts_chunk$set(eval = FALSE)
 ```
 
 This session is concerned with summary statistics for interpoint
-spacing and distances.
+spacing and distances.  
+The lecturer's R script is [available here](https://raw.githubusercontent.com/spatstat/AAU2015/master/Scripts/script09.R) (right click and save).
 
 ```{r include=FALSE}
 library(spatstat)

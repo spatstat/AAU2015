@@ -8,7 +8,8 @@ title: 'Lab 10: Gibbs processes'
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
-This session is concerned with Gibbs models for point patterns with interpoint interaction.
+This session is concerned with Gibbs models for point patterns with interpoint interaction.  
+The lecturer's R script is [available here](https://raw.githubusercontent.com/spatstat/AAU2015/master/Scripts/script10.R) (right click and save).
 
 ```{r include=FALSE}
 library(spatstat)

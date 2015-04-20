@@ -30,7 +30,28 @@ For the `swedishpines` data:
 4.  Define Fisher’s variance-stabilising transformation for c.d.f.’s
     by
     ```{r}
-    fish <- function(x) asin(sqrt(x))
+    Phi <- function(x) asin(sqrt(x))
     ```
-    Plot the $G$ function using the formula `fish(.) ~ fish(theo)`
+    Plot the $G$ function using the formula `Phi(.) ~ Phi(theo)`
+    and interpret it.
+
+
+### Exercise 2
+
+For the `swedishpines` data:
+
+1.  Calculate the estimate of the nearest neighbour distance
+    distribution function $F$ using `Fest`.
+
+2.  Plot $\hat F(r)$ against $r$
+
+3.  Plot $\hat F(r)$ against the theoretical (Poisson) value
+    $F_{\mbox{pois}}(r) = 1 - \exp(-\lambda \pi r^2)$.
+
+4.  Define Fisher’s variance-stabilising transformation for c.d.f.’s
+    by
+    ```{r}
+    Phi <- function(x) asin(sqrt(x))
+    ```
+    Plot the $F$ function using the formula `Phi(.) ~ Phi(theo)`
     and interpret it.

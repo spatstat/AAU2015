@@ -26,7 +26,7 @@ the `swedishpines` data.
 2.  Fit the stationary Strauss model with the chosen interaction
     distance using
     ```{r}
-    ppm(swedishpines, ~1, Strauss(R))
+    ppm(swedishpines ~ 1, Strauss(R))
     ```
     where `R` is your chosen value.
 
@@ -61,7 +61,7 @@ profile pseudolikelihood.
 
 4.  Execute
     ```{r}
-    fitp <- profilepl(D, Strauss, swedishpines)
+    fitp <- profilepl(D, Strauss, swedishpines ~ 1)
     ```
     to find the maximum profile pseudolikelihood fit.
 
@@ -111,7 +111,7 @@ pseudolikelihood (the default, `method="mpl"`).
 Repeat Question 2 for the inhomogeneous Strauss process with
 log-quadratic trend. The corresponding call to `profilepl` is
 ```{r}
-fitp <- profilepl(D, Strauss, swedishpines, ~polynom(x,y,2))
+fitp <- profilepl(D, Strauss, swedishpines ~ polynom(x,y,2))
 ```
     
 ### Exercise 7

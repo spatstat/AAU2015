@@ -8,8 +8,8 @@ title: 'Lab 8: Spacing and distances'
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
-This session is concerned with summary statistics for interpoint
-spacing and distances.
+This session is concerned with summary statistics for
+spacings and interpoint distances.
 
 ```{r include=FALSE}
 library(spatstat)

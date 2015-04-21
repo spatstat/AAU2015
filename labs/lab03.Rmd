@@ -43,13 +43,13 @@ covariate information in a list `bei.extra`.
 Assume that the intensity of trees is a function $\lambda(u) = \rho(e(u))$
 where $e(u)$ is the terrain elevation at location u.
 
-1.  Compute a nonparametric estimate of the function ρ and plot it by
+1.  Compute a nonparametric estimate of the function $\rho$ and plot it by
     ```{r}
     rh <- rhohat(bei, elev)
     plot(rh)
     ```
 
-2.	Compute the predicted intensity based on this estimate of ρ.
+2.	Compute the predicted intensity based on this estimate of $\rho$.
 
 3.  Compute a non-parametric estimate by kernel smoothing and
   	compare with the predicted intensity above.

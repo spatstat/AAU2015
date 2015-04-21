@@ -89,7 +89,7 @@ img {
 <li><p>Plot a kernel smoothed intensity estimate.</p></li>
 <li><p>Fit the Poisson point process models with loglinear intensity (trend formula <code>~x+y</code>) and log-quadratic intensity (trend formula <code>~polynom(x,y,2)</code>) to the Japanese Pines data.</p></li>
 <li><p>extract the fitted coefficients for these models using <code>coef</code>.</p></li>
-<li><p>Plot the fitted model intensity (using <code>plot(fit)</code>)</p></li>
+<li><p>Plot the fitted model intensity (using <code>plot(predict(fit))</code>)</p></li>
 <li><p>perform the Likelihood Ratio Test for the null hypothesis of a loglinear intensity against the alternative of a log-quadratic intensity, using <code>anova</code>.</p></li>
 <li><p>Generate 10 simulated realisations of the fitted log-quadratic model, and plot them, using <code>plot(simulate(fit, nsim=10))</code> where <code>fit</code> is the fitted model.</p></li>
 </ol>

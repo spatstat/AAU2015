@@ -48,9 +48,9 @@ profile pseudolikelihood.
 
 2.  Generate a sequence of values equally spaced across this range,
     for example, if your range of plausible values was
-    $[0.05, 0.3]$, then type
+    $[5, 12]$, then type
     ```{r}
-    rvals <- seq(0.05, 0.3, by=0.01)
+    rvals <- seq(5, 12, by=0.5)
     ```
 
 3.  Construct a data frame, with one column named `r`

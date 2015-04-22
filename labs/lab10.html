@@ -85,7 +85,7 @@ img {
 <ol style="list-style-type: decimal">
 <li><p>Look again at the plot of the <span class="math">\(L\)</span>-function of <code>swedishpines</code> and determine a plausible range of possible values for the interaction distance.</p></li>
 <li><p>Generate a sequence of values equally spaced across this range, for example, if your range of plausible values was <span class="math">\([0.05, 0.3]\)</span>, then type</p>
-<pre class="r"><code>rvals &lt;- seq(0.05, 0.3, by=0.01)</code></pre></li>
+<pre class="r"><code>rvals &lt;- seq(5, 12, by=0.5)</code></pre></li>
 <li><p>Construct a data frame, with one column named <code>r</code> (matching the argument name of <code>Strauss</code>), containing these values. For example</p>
 <pre class="r"><code>D &lt;- data.frame(r = rvals)</code></pre></li>
 <li><p>Execute</p>
